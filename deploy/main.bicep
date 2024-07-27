@@ -26,13 +26,6 @@ param sqlServerAdministratorLogin string
 @description('The administrator login password for the SQL server.')
 param sqlServerAdministratorLoginPassword string
 
-@description('The administrator login username for the SQL server.')
-param sqlServerAdministratorLogin string
-
-@secure()
-@description('The administrator login password for the SQL server.')
-param sqlServerAdministratorLoginPassword string
-
 // Define the names for resources.
 var appServiceAppName = 'toy-website-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website'
